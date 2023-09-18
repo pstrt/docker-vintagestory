@@ -13,6 +13,8 @@ services:
   vsserver:
     image: howwof/vintagestory:latest-(chose architecture arm64 or amd64)
     container_name: vsserver
+    stdin_open: true
+    tty: true
     restart: unless-stopped
     volumes:
     # • your world will be in /appdata/vintagestory/vs by default (/gamedata/vs on the container)

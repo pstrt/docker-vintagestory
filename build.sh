@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vs_version=1.18.10
+vs_version=1.18.11
 
 # Build for ARM64
 docker build arm64 --platform=linux/arm64 -t howwof/vintagestory:$vs_version-arm64
