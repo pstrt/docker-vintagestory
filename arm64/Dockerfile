@@ -19,7 +19,7 @@ RUN rm "vs_server_${vs_os}_${vs_version}.tar.gz"
 # ============== patch for arm64 ==================
 
 RUN rm -rf VintagestoryServer VintagestoryServer.deps.json VintagestoryServer.dll VintagestoryServer.pdb VintagestoryServer.runtimeconfig.json Lib
-RUN wget "https://github.com/anegostudios/VintagestoryServerArm64/files/12380878/vs_server_linux-arm64.tar.gz"
+RUN wget "https://github.com/anegostudios/VintagestoryServerArm64/releases/download/1.19.0-rc.6/vs_server_linux-arm64-1.19.tar.gz"
 RUN tar -xvzf "vs_server_linux-arm64.tar.gz"
 RUN mkdir arm64beta
 RUN tar -xvzf "vs_server_linux-arm64.tar.gz" -C arm64beta
