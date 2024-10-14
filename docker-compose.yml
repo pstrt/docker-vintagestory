@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   vsserver:
-    image: howwof/vintagestory:latest
+    image: pstrt/vintagestory:latest
     container_name: vsserver
     stdin_open: true
     tty: true

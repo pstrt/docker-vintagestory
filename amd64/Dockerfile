@@ -3,9 +3,9 @@ FROM debian:latest as downloader
 
 WORKDIR /download
 
-ARG vs_type=stable
+ARG vs_type=pre
 ARG vs_os=linux-x64
-ARG vs_version=1.18.11
+ARG vs_version=1.20.0-pre.6
 
 RUN apt update
 RUN apt install -y wget
